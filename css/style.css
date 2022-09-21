@@ -1,0 +1,172 @@
+@font-face {
+    font-family:'balham' ;
+    src: url("../fontes/Balham.otf");
+}
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+body{
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header, section, nav{
+    width: 100%;
+}
+
+section, header{
+    height: 100vh;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.374);
+}
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.ghost{
+    height: 80px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+li{
+    list-style: none;
+}
+
+video{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: -6;
+}
+
+nav{
+    /* background-color:rgb(255, 191, 184); */
+    position: fixed;
+    background-color: rgba(50, 50, 50, 0.481);
+
+ 
+}
+
+.menu-container{
+    position: relative;
+    display: grid; 
+    grid-template: 'logo ... nav';
+    grid-template-areas: 30% 1fr 50%; 
+    align-content: center;
+   
+}
+
+.menu-logo img{
+    border-radius: 50px;
+    grid-area: logo;
+    
+}
+
+.menu-links{
+    grid-area: nav;
+    /* border: solid rgb(255, 255, 255); */
+    position: relative;
+    width: 100%;
+    display: flex;
+    
+ 
+  
+   
+}
+
+.link{
+    padding: auto;
+    color:bisque;
+    padding-top: 5%; 
+    padding: 6% 8%;
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    
+    
+
+
+
+}
+
+.link:hover{
+    background-color: rgba(0, 0, 0, 0.636);
+}
+
+.title{
+    width: 60%;
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 2em;
+    font-family:"balham";
+    color: bisque;
+    
+}
+
+
+/* sobre */
+
+.sobre{
+     height:100%;
+     width: 100%;
+     display: grid;
+     grid-template:'img txt' ;
+     grid-template-areas: 50% 60%;
+} 
+.sobre-img{
+    width: 90%;
+    grid-area: img;
+   
+
+}
+.sobre-img img{
+    width: 100%;
+
+}
+
+.sobre-txt{
+    grid-area: txt;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(98, 98, 98);
+ 
+}
+
+.sobre-txt p{
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 5% 5%;
+    
+}
+
+.sobre-txt h3{
+    padding-top: 5%;
+    font-family:"balham";
+    font-size: 1.4em;
+}
+
+.proj{
+
+    width: 24%;
+    height: 400px;
+    background-image: url('../img/site.png');
+}
