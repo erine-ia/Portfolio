@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0ca4f092d4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/stilo.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,33 +16,36 @@
             <source src="../img/3196916710.mp4" type="video/mp4">
             <source src="../img/3196916710.ogv" type="video/ogg">
         </video>
-     <nav class="menu">
-        <div class="container menu-container">
-            <div class="menu-logo">
-                <img src="../img/logo.gif" alt="">
-            </div>
-            <div class="menu-links">
-                <a href="#sobre" class="link">Sobre</a>
-                <a href="" class="link">Projetos</a>
-                <a href="" class="link">Contato</a>
-            </div>
+       
+        <nav class="menu">
+            <div class="container menu-container">
+                <div class="menu-logo">
+                    <img src="../img/logo.gif" alt="">
+                </div>
+                
+                <div class="menu-links-fechado">
+                    <a href="#sobre" class="link">Sobre</a>
+                    <a href="#projetos" class="link">Projetos</a>
+                    <a href="" class="link">Contato</a>
+                </div>
+                <div class="btn-menu-abrir"></div>
+            </div> 
+            
+        </nav>
+        <div class="title">
+            <h1>Erinéia Mateus</h1>
+            <h3>Web Developer</h3>
         </div>
-     </nav>
-     <div class="title">
-         <h1>Erinéia Mateus</h1>
-         <h3>Web Developer</h3>
-     </div>
 
    </header>
    <div class="ghost"></div>
-   <section id="sobre" class="sobre">
+   <section id="sobre" class="sobre container">
        <div class="sobre-img">
-             <img src="../img/eri.jpg" alt="">
-       </div>
+             <img src="../img/eri_menor.jpg" alt="">
+       </div> 
 
        <div class="sobre-txt">
-
-            <img src="../img/icon-laptop.png" alt="">
+           
             <h3>Sobre Mim</h3>
             <p>Olá,  sou Erinéia <br>
                 Atualmente estudante de Desenvolvimento Web no programa elasNaTech() - uma parceria entre o Grupo CCR e JA Brasil para formação e inserção
@@ -56,21 +61,102 @@
    <section id="projetos" class="projetos ">
        <div class="cabecalho">
             <h2>Projetos</h2>
+       
        </div>
-       <div class="projet-list container">
+       
+       <div class="project-list container">
+
            <div class="proj">
-                 <a href=""><img src="../img/site.png" alt=""></a>
-                 <h4>Portifolio</h4>
-                 
+                 <figure>
+                    <a href="../img/img-sites/jogo-da-velha.png" target="_blank"><img  class="img-site"  src="../img/img-sites/jogo-da-velha.png" alt=""></a>
+                    <figcaption>
+                        <span>Jogo da Velha</span> <br>
+                       
+                    
+                    </figcaption>
+                   
+                 </figure>
+                 <a href="../img/img-sites/trattoriamobile.inteira.png" class="mobile" target="_blank" >versão mobile</a> <br>
+                       <a href="https://github.com/erine-ia/jogo-da-velha"><img src="../img/github2.png" alt=""></a><br>
+
            </div>
 
            <div class="proj">
-           </div>
+                    <figure>
+                         <a href="../img/img-sites/jogo-da-velha.png" target="_blank"><img  class="img-site"  src="../img/img-sites/jogo-da-velha.png" alt=""></a>
+                        <figcaption>
+                                 <span>Jogo da Velha</span> <br>
+                         </figcaption>
+                    </figure>
+                        <a href="../img/img-sites/trattoriamobile.inteira.png" class="mobile" target="_blank" >versão mobile</a> <br>
+                        <a href="https://github.com/erine-ia/jogo-da-velha"><img src="../img/github2.png" alt=""></a><br>
+
+             </div>
+
+            <div class="proj">
+                    <figure>
+                        <a href="../img/img-sites/trattoria-site2-inteiro.png" target="_blank"><img  class="img-site"  src="../img/img-sites/trattoria-site2.png" alt=""></a>
+                        <figcaption>
+                            <span>Site NeiaSpaghetti</span> <br>
+                            <!--
+                            <img src="../img/html-icon.png" alt="">
+                            <img src="../img/css-icon.png" alt="">
+                            <img src="../img/js.png" alt="">
+                            -->
+
+                            
+                        </figcaption>
+                        <a href="../img/img-sites/trattoriamobile.inteira.png" class="mobile" target="_blank" >versão mobile</a> <br>
+                        <a href="https://github.com/erine-ia/neiatrattoria.git"><img src="../img/github2.png" alt=""></a><br>
+                    </figure>
+                    
+            </div> 
+            <div class="proj">
+                <figure>
+                     <a href="../img/img-sites/jogo-da-velha.png" target="_blank"><img  class="img-site"  src="../img/img-sites/jogo-da-velha.png" alt=""></a>
+                    <figcaption>
+                             <span>Jogo da Velha</span> <br>
+                     </figcaption>
+                </figure>
+                    <a href="../img/img-sites/trattoriamobile.inteira.png" class="mobile" target="_blank" >versão mobile</a> <br>
+                    <a href="https://github.com/erine-ia/jogo-da-velha"><img src="../img/github2.png" alt=""></a><br>
+
+         </div>
+
+
+     
+
           
            
          
        </div>
+       <!-- <p><img src="../img/seta-direita.png" alt=""> <img src="../img/seta-esquerda.png" alt=""></p> -->
    </section>
-   <section id="contato" class="contato"></section>
+   <section id="contato" class="contato">
+        <div class="cabecalho">
+             <h2>Contato</h2>
+   
+        </div>
+     
+        <div class="rodape container">
+            <div class="redes">
+                <img src="../img/git.png" alt="" >
+                <img src="../img/linkedin.png" alt="">
+            </div>
+            <div class="formulario">
+                <form action="">
+                    <input type="text" placeholder="nome">
+                    <input type="email" placeholder="email">
+                    <textarea placeholder="mensagem" name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit">enviar</button>
+                </form>
+            </div>
+        </div>
+   </section>
+
+
+   <div class="copy"> ©2022 - Todos os Direitos Reservados</div>
+
+   <script src="../js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,470 @@
+:root{
+    /* cores */
+    --global-cor-fonte: rgb(98, 98, 98);
+    --global-cor-fonte-copy:rgb(177, 163, 163);
+    --global-cor-navbar:#3333337b;
+    --global-bg-rodape:rgb(12, 5, 19);
+    --global-bg-btn-menu:#63316b;
+}
+
+@font-face {
+    font-family:'balham' ;
+    src: url("../fontes/Balham.otf");
+}
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+body{
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header, section, nav{
+    width: 100%;
+}
+
+section, header{
+    height: 100vh;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.374);
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+video{
+    height: 100vh;
+    width:100%;
+    object-fit: cover;
+    position:absolute;
+    z-index:-1;
+    top: 0;
+
+}
+nav{
+    object-fit: cover;
+    /* position: fixed; */
+    width: 100%;
+    height: 15%;
+    background-color: var(--global-cor-navbar);
+    top: 0;
+   
+  
+    
+}
+
+
+
+
+.menu-container{
+
+    display: flex;
+    align-content: stretch; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+
+.btn-menu-abrir{
+    display: block;
+    width:60px;
+    position: relative;
+    height: 8px;
+    background-color:rgb(191, 157, 157);
+    float: right;
+    border-radius: 5px;
+  
+
+}
+
+
+
+.btn-menu-abrir::after{
+    content:" ";
+    width:60px;
+    height: 8px;
+    background-color:rgb(191, 157, 157);
+    float: right;
+    border-radius: 5px;
+    position: absolute;
+    top:-15px;
+}
+
+
+.btn-menu-abrir::before{
+    content:" ";
+    width:60px;
+    height: 8px;
+    background-color:rgb(191, 157, 157);
+    float: right;
+    border-radius: 5px;
+    position: absolute;
+    top:15px;
+}
+
+
+.btn-menu-fechar{
+    display: block;
+    width:60px;
+    position: relative;
+    height: 8px;
+    background-color:rgb(191, 157, 157);
+    float: right;
+    border-radius: 5px;
+    transform: rotate(40deg);
+  
+
+}
+
+.btn-menu-fechar::before{
+    content:" ";
+    display: block;
+    width:60px;
+    position: absolute;
+    height: 8px;
+    background-color:rgb(183, 158, 158);
+    float: right; 
+    border-radius: 5px;
+    transform: rotate(100deg);
+  
+}
+
+
+
+.menu-links-fechado{
+    display: grid; 
+    border:solid;
+    position:absolute;
+    background-color: var(--global-bg-rodape);
+    width: 50%;
+    top: -200px;
+    left: 50%;
+    height: -200px;
+    text-align: center;
+    padding: 5% 0;
+    transition: all 1s ease;
+   
+}
+
+.menu-links-fechado a{
+    display:none;
+}
+
+.menu-links-aberto{
+    display: grid; 
+    /* border:solid; */
+    border-bottom-left-radius:25px ;
+    position:absolute;
+    /* background-color: var(--global-bg-rodape); */
+    background-color: aliceblue;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    height: 200px;
+    text-align: center;
+    padding: 10% 0;
+    transition: all 1s ease;
+    animation: mudar-bg-menu 2s;
+
+}
+@keyframes mudar-bg-menu{
+    0%{
+        background-color: transparent;
+    }
+    20%{
+        background-color:transparent;
+    }
+
+}
+
+.menu-links-aberto a{
+    color:var(--global-cor-fonte);
+    text-decoration: none;
+    padding: 2% 0;
+    font-size: 1.3em;
+    justify-content: center;
+    width: 80%;
+}
+
+.menu-links-aberto a:hover{
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em;
+    width: 80%;
+    background-color:#63316b ;
+}
+
+.links:hover{
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em;
+    width: 80%;
+    background-color:#63316b ;
+}
+
+
+.title{
+    width: 60%;
+    position: relative;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 2em;
+    font-family:"balham";
+    color: bisque;
+    
+}
+
+.menu-logo img{
+    border-radius: 50%;
+}
+
+/* sobre */
+
+.sobre, .projetos, .contato{
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-img{
+    width: 50%;
+}
+
+.sobre-img img{
+    width: 70%;
+}
+
+.sobre-txt{
+ 
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(98, 98, 98);
+ 
+}
+
+.sobre-txt p{
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 5% 0%;
+
+    
+}
+
+.sobre-txt h3{
+    padding-top: 5%;
+    font-family:"balham";
+    font-size: 1.4em;
+ 
+}
+
+.cabecalho{
+    text-align: center;
+    font-family: "balham";
+    background-image: url("../img/bg-cabecalho.png");
+    background-position-y: center;
+    font-size: 1.4em;
+    color: var(--global-cor-fonte-copy);
+    background-color: var(--global-bg-rodape); 
+    padding: 5% 0;
+    top: 50px;
+    margin-bottom: 5%;
+}
+
+.cabecalho h2{
+    background-color: var(--global-bg-rodape);
+}
+
+
+.project-list{
+    width: 100%;
+    display: flexbox;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.proj{
+    width: 50%;
+    text-align: center;
+    padding: 2%;
+    border: solid 0.5px rgba(153, 153, 153, 0.538);
+    border-radius: 10px;
+    height: 50%;
+   
+
+}
+.proj figure{
+    width: 100%;
+}
+
+figcaption{
+    background-color:var(--global-cor-fonte-copy);
+    position:absolute ;
+    width:10%;
+    display: none;
+}
+
+.img-site{
+    width: 100%;
+}
+
+.contato{
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+   
+    
+}
+
+.rodape{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: column;
+}
+
+.redes{
+    width: 100%;
+    
+}
+.redes img{
+  
+}
+
+.formulario{
+    width: 100%;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 2%;
+    border: solid 1px rgb(153, 153, 153);
+    margin-bottom: 2%;
+}
+
+button{
+    background-color: transparent;
+    padding: 2% 10%;
+    border:solid var(--global-cor-fonte-copy);
+}
+
+
+.copy{
+    width: 100%;
+    height: 25px;
+    font-weight: 600;
+    /* position: fixed; */
+    padding: 2% 0;
+    text-align: center;
+    background-color: rgb(12, 5, 19);
+    color:rgb(177, 163, 163);
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .sobre{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "img txt";
+      
+    }
+    
+    .sobre-img{
+        grid: img;
+        width: 100%;
+    }
+
+    
+    .sobre-txt{
+        grid-area: txt;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.2em;
+        color: rgb(98, 98, 98);
+     
+    }
+
+    .project-list{
+        width: 100%;
+        display:flex;
+       flex-direction: row;
+       
+    }
+
+    .proj{
+        width: 35%;
+       
+    }
+    figcaption{
+       width:35%;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px){
+
+    .project-list{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+    }
+
+    .proj{
+        width: 40%;
+    }
+    figcaption{
+        width: 40%;
+    }
+    
+
+
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    
+.project-list{
+        width: 100%;
+        display: flexbox;
+    }
+    .proj{
+        width: 50%;
+    }
+    figcaption{
+        background-color:var(--global-cor-fonte-copy);
+        position:absolute ;
+        width:50%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+       
+.project-list{
+    width: 100%;
+    display: block;
+}
+    .proj{
+        width: 100%;
+}
+figcaption{
+    width:100%;
+}
+}
